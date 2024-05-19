@@ -44,6 +44,17 @@ protected $casts = [
 User::observe(UploadedFilesObserver::class);
 ```
 
+3. On Model Retrieval, the casted attribute is converted to a file object that provides the following method
+
+```php
+$model->profile_picture->path(); // return the saved path in the db.
+$model->profile_picture->fullPath(); // return the full path based on the provided disk
+$model->profile_picture->size(); // return the file size
+$model->profile_picture->url(); // return the file url based on the provided disk
+$model->profile_picture->exists(); // return true of false
+$model->profile_picture->delete(); // delete the file
+```
+
 ## Testing
 
 ```bash
