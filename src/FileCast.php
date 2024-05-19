@@ -18,7 +18,7 @@ class FileCast implements CastsAttributes
     public function __construct(?string $disk = null, ?string $path = null, ?string $visibility = 'public')
     {
         $this->disk = $disk ?: config('file-cast.disk');
-        $this->path = $path ?: config('file-cast.folder');
+        $this->path = $path;
         $this->visibility = $visibility;
     }
 

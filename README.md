@@ -9,7 +9,7 @@ This Laravel package makes file management straightforward. It automatically sav
 ## Features
 
 -   Mapping uploaded files from the Request to the Model.
--   Old files are automatically upon model update or deletion.
+-   Old files are automatically deleted upon model update or deletion.
 -   File Value Object for easy access
 
 ## Installation
@@ -34,7 +34,7 @@ php artisan vendor:publish --tag="file-cast-config"
 protected $casts = [
     'government_id' => FileCast::class, // uses default public disk that can be change from configuratuin. and uses table name as a path
     'verification_video' => FileCast::class.':s3', // uses s3 disk for upload and uses table name as a path
-    'profile_picture' => FileCast::class.':s3,pics', // uses s3 disk for upload and uses table pics as a path
+    'profile_picture' => FileCast::class.':s3,pics', // uses s3 disk for upload and uses pics as a path
 ];
 ```
 
