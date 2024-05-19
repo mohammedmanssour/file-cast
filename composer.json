@@ -1,6 +1,6 @@
 {
     "name": "mohammedmanssour/file-cast",
-    "description": "Easily link your uploads with their model attributes",
+    "description": "Easily manage uploaded files in your Laravel app, with automatic path saving and handy value objects for effortless access.",
     "keywords": [
         "Mohammed Manssour",
         "laravel",
