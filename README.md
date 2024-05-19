@@ -1,7 +1,6 @@
 # File Cast
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/mohammedmanssour/file-cast.svg?style=flat-square)](https://packagist.org/packages/mohammedmanssour/file-cast)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/mohammedmanssour/file-cast/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/mohammedmanssour/file-cast/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/mohammedmanssour/file-cast/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/mohammedmanssour/file-cast/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/mohammedmanssour/file-cast.svg?style=flat-square)](https://packagist.org/packages/mohammedmanssour/file-cast)
 
