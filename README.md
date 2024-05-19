@@ -32,9 +32,9 @@ php artisan vendor:publish --tag="file-cast-config"
 
 ```php
 protected $casts = [
-    'government_id' => FileCast::class, // uses default public disk that can be change from configuratuin. and uses table name as a path
-    'verification_video' => FileCast::class.':s3', // uses s3 disk for upload and uses table name as a path
-    'profile_picture' => FileCast::class.':s3,pics', // uses s3 disk for upload and uses pics as a path
+    'government_id' => FileCast::class, // uses table name as storage path, public visibility and the configured default disk
+    'verification_video' => FileCast::class.':verification', // uses verification as storage path, public visisbility and the configured default disk
+    'profile_picture' => FileCast::class.':pics,,s3', // uses pics as storage path, and s3 as storage disk
 ];
 ```
 

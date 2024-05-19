@@ -15,7 +15,7 @@ class File extends Model
     public $timestamps = false;
 
     public $casts = [
-        'path' => FileCast::class.':fake_disk,path',
+        'path' => FileCast::class.':path,,fake_disk',
     ];
 
     public $fillable = ['id', 'path'];
