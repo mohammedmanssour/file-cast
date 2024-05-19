@@ -4,6 +4,7 @@ namespace MohammedManssour\FileCast;
 
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\UploadedFile;
 
 class FileCast implements CastsAttributes
 {
@@ -34,7 +35,7 @@ class FileCast implements CastsAttributes
     public function set(Model $model, string $key, mixed $value, array $attributes)
     {
         // if the provided is not a file. then we'll save the value as is. It's up to the developer here
-        if (! is_file($value)) {
+        if (! ($value instanceof UploadedFile)) {
             return $value;
         }
 
