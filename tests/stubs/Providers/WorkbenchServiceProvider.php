@@ -1,9 +1,10 @@
 <?php
 
-namespace Workbench\App\Providers;
+namespace MohammedManssour\FileCast\Tests\stubs\Providers;
 
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use MohammedManssour\FileCast\Tests\stubs\Models\File;
+use MohammedManssour\FileCast\UploadedFilesObserver;
 
 class WorkbenchServiceProvider extends ServiceProvider
 {
@@ -12,7 +13,6 @@ class WorkbenchServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
     }
 
     /**
@@ -20,6 +20,6 @@ class WorkbenchServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Route::view('/', 'welcome');
+        // File::observe(UploadedFilesObserver::class);
     }
 }
